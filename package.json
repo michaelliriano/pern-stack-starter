@@ -1,0 +1,30 @@
+{
+  "name": "pern",
+  "version": "1.0.0",
+  "description": "starter project for pern stack",
+  "main": "./src/server.js",
+  "author": "Michael Liriano",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon server.js",
+    "db:create": "sequelize-cli db:create",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:g:migration": "sequelize-cli migration:generate --name"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.0-alpha.1",
+    "supertest": "^6.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "sequelize-cli": "^6.3.0"
+  }
+}
